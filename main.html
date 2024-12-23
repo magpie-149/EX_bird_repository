@@ -3,19 +3,17 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>그룹웨어 메인 화면</title>
   <link rel = "stylesheet" href = "main.css">
+  <title>그룹웨어 메인 화면</title>
+  
 </head>
 <body>
-  
+  <!-- 상단 내비게이션 -->
   <div class="navbar">
-
     <div class="logo">
-      <img src="/resources/medies/logo.png" alt="로고 이미지">
-      <span>그룹웨어</span>
+      <img src="로고1.png" alt="로고">
     </div>
-  
-    <div class="menu">
+    <div>
       <a href="#">홈</a>
       <a href="#">공지사항</a>
       <a href="#">전자결재</a>
@@ -25,26 +23,25 @@
     </div>
   </div>
 
- 
+  <!-- 메인 콘텐츠 영역 -->
   <div class="container">
- 
-  
-    <div class="user">
+    <!-- 왼쪽 사이드바 -->
+    <div class="sidebar">
       <div class="profile">
-        <img src="" alt="프로필 이미지">
+        <img src="프로필.png" alt="프로필 사진">
+        <div class="profile-info">
+          <h3>부서명</h3>
+          <p>OOO 대리</p>
+        </div>
       </div>
-      <h3>부서명</h3>
-      <p>OOO 대리</p>
+      <div class="pay">결재현황</div>
     </div>
 
-    <div class="sidebar">
-    </div>
-  
+    <!-- 주요 콘텐츠 -->
     <div class="content">
       <div class="notice">공지사항</div>
-      <div class="borad">게시판</div>
-      <div class="payment">결재현황</div>
-      <div class="messeage">받은 메일/알림</div>
+      <div class="board">게시판</div>
+      <div class="message">받은 메일/알림</div>
       <div class="calendar">캘린더</div>
     </div>
   </div>
