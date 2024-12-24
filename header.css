@@ -1,0 +1,28 @@
+.header {
+    grid-column: span 2;
+    background: #5c21a9;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0 20px;
+    position: relative;
+    height: 70px;
+  }
+  
+  .header.logo {
+    left: 20px;
+    display: flex;
+    align-items: left;
+  }
+  
+  .header .logo img {
+    height: 60px;
+    margin-right: 10px;
+  }
+  
+  .header a {
+    color: white;
+    margin: 0 15px;
+    text-decoration: none;
+  }
