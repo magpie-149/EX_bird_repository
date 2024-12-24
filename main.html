@@ -1,49 +1,120 @@
-<!DOCTYPE html>
-<html lang="ko">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel = "stylesheet" href = "main.css">
-  <title>그룹웨어 메인 화면</title>
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  box-sizing: border-box;
+  background-color: #f6efff;
+}
+
+.container {
   
-</head>
-<body>
-  <!-- 상단 내비게이션 -->
-  <div class="navbar">
-    <div class="logo">
-      <img src="로고1.png" alt="로고">
-    </div>
-    <div>
-      <a href="#">홈</a>
-      <a href="#">공지사항</a>
-      <a href="#">전자결재</a>
-      <a href="#">일정관리</a>
-      <a href="#">주소록</a>
-      <a href="#">마이페이지</a>
-    </div>
-  </div>
+  width: 100%;
+  height: 100vh;
+  display: grid;
+  grid-template-columns: 300px 1fr;
+  grid-template-rows: 100px 1fr;
+  gap: 10px;
+  margin: 0 auto;
+}
 
-  <!-- 메인 콘텐츠 영역 -->
-  <div class="container">
-    <!-- 왼쪽 사이드바 -->
-    <div class="sidebar">
-      <div class="profile">
-        <img src="프로필.png" alt="프로필 사진">
-        <div class="profile-info">
-          <h3>부서명</h3>
-          <p>OOO 대리</p>
-        </div>
-      </div>
-      <div class="pay">결재현황</div>
-    </div>
+.sidebar {
+  background: #e9daf8;
+  padding: 20px;
+  border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: calc(100vh - 100px);
+}
 
-    <!-- 주요 콘텐츠 -->
-    <div class="content">
-      <div class="notice">공지사항</div>
-      <div class="board">게시판</div>
-      <div class="message">받은 메일/알림</div>
-      <div class="calendar">캘린더</div>
-    </div>
-  </div>
-</body>
-</html>
+.profile {
+  background: #e9daf8;
+  display: flex;
+  align-items: center;
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+.profile img {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  margin-right: 20px;
+}
+
+.profile-info {
+  display: flex;
+  flex-direction: column;
+}
+
+.profile-info h3 {
+  margin: 0;
+  font-size: 18px;
+}
+
+.profile-info p {
+  margin: 5px 0 0;
+  font-size: 14px;
+}
+
+.content {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto auto auto;
+  gap: 10px;
+}
+#footer{
+  background-color: #F8BDCD;
+  grid-area: footer;       
+}
+.content > div {
+  background: #efdeff;
+  padding: 20px;
+  border-radius: 5px;
+}
+
+.notice {
+  height: 80px;
+  background: #e9daf8;
+  padding: 20px;
+}
+
+.board{
+  height: auto;
+}
+
+.pay {
+  background: #e9daf8;
+  height: 300px;
+  border: 1px #5c21a9;
+  margin-top: 20px;
+  width: 100%;
+  border-radius: 5px;
+}
+
+.message {
+  height: auto;
+}
+
+.calendar {
+  height: 200px;
+}
+
+@media (max-width: 768px) {
+  .container {
+    grid-template-columns: 1fr;
+    width: 80%;
+  }
+
+  .content {
+    grid-template-columns: 1fr;
+  }
+
+  .notice,
+  .board,
+  .calendar,
+  .pay,
+  .message {
+    grid-column: span 1;
+  }
+}
