@@ -1,143 +1,61 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>그룹웨어 메인 화면</title>
+  <link rel = "stylesheet" href = "header.css">
+  <link rel = "stylesheet" href = "main.css">
+</head>
+<body>
+  <div class="header">
+    <div class="logo">
+      <img src="/resources/medies/로고1.png" alt="로고 이미지">
+    </div>
+  
+    <div class="menu">
+      <a href="main.html">홈</a>
+      <a href="#">로그인</a>
+      <a href="#">로그아웃</a>
+    </div>
+  </div>
 
-    body {
-      margin: 0;
-      font-family: Arial, sans-serif;
-      box-sizing: border-box;
-      background-color: #f6efff;
-    }
+ 
+  <div class="container">
 
-    .container {
-      width: 100%;
-      height: 100vh;
-      display: grid;
-      grid-template-columns: 300px 1fr;
-      grid-template-rows: 100px 1fr;
-      gap: 10px;
-      margin: 0 auto;
-    }
+    <div class="user">
+      <div class="profile">
+        <img src="/resources/medies/프로필.png" alt="프로필 이미지">
+      
+      <h3>부서명</h3>
+      <p>OOO(이름) 대리(직급)</p>
+    </div>
+    <div class = "mypage">
+    <a href="#">마이페이지</a>
+    <footer id="footer"><h2>footer</h2></footer>
+  </div>
+    </div>
+    <div class="notice">공지사항</div>
+    <div class="sidebar">
+      <ul>
 
-    .navbar {
-      grid-column: span 2;
-      background: #5c21a9;
-      color: white;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      padding: 0 20px;
-      position: relative;
-      height: 70px;
-    }
+        <button id = "notice">공지사항</button>
+          <button id = "borad">게시판</button>
+          <button id = "address">주소록</button>
+          <button id = "payment">전자결재</button>
+          <button id = "calendar">일정관리</button>
+      </ul>
+    </div>
+  
+    <!-- 
+    메인화면 보류 
+    <div class="content">
 
-    .navbar .logo {
-      position: absolute;
-      left: 20px;
-      display: flex;
-      align-items: center;
-    }
-
-    .navbar .logo img {
-      height: 60px;
-      margin-right: 20px;
-    }
-
-    .navbar a {
-      color: white;
-      margin: 0 15px;
-      text-decoration: none;
-    }
-
-    .sidebar {
-      background: #e9daf8;
-      padding: 20px;
-      border-radius: 5px;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      height: calc(100vh - 100px);
-    }
-
-    .profile {
-      display: flex;
-      align-items: center;
-      width: 100%;
-      margin-bottom: 20px;
-    }
-
-    .profile img {
-      width: 100px;
-      height: 100px;
-      border-radius: 50%;
-      margin-right: 20px;
-    }
-
-    .profile-info {
-      display: flex;
-      flex-direction: column;
-    }
-
-    .profile-info h3 {
-      margin: 0;
-      font-size: 18px;
-    }
-
-    .profile-info p {
-      margin: 5px 0 0;
-      font-size: 14px;
-    }
-
-    .content {
-      display: grid;
-      grid-template-columns: 1fr;
-      grid-template-rows: auto auto auto;
-      gap: 10px;
-    }
-
-    .content > div {
-      background: #efdeff;
-      padding: 20px;
-      border-radius: 5px;
-    }
-
-    .notice {
-      height: 80px;
-    }
-
-    .board{
-      height: auto;
-    }
-
-    .pay {
-      background: #e9daf8;
-      height: 300px;
-      border: 1px #5c21a9;
-      margin-top: 20px;
-      width: 100%;
-      border-radius: 5px;
-    }
-
-    .message {
-      height: auto;
-    }
-
-    .calendar {
-      height: 200px;
-    }
-
-    @media (max-width: 768px) {
-      .container {
-        grid-template-columns: 1fr;
-        width: 100%;
-      }
-
-      .content {
-        grid-template-columns: 1fr;
-      }
-
-      .notice,
-      .board,
-      .calendar,
-      .pay,
-      .message {
-        grid-column: span 1;
-      }
-    }
+      <div class="borad">게시판</div>
+      <div class="payment">결재현황</div>
+      <div class="messeage">받은 메일/알림</div>
+      <div class="calendar">캘린더</div>
+    </div> -->
+  </div>
+</body>
+</html>
