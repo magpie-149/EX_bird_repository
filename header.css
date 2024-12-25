@@ -4,16 +4,16 @@
     color: white;
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: space-between; /* 요소를 양 끝으로 배치 */
     padding: 0 20px;
     position: relative;
     height: 70px;
   }
   
-  .header.logo {
-    left: 20px;
+  .header .logo {
     display: flex;
-    align-items: left;
+    align-items: center;
+    margin-right: auto; /* 로고를 맨 왼쪽으로 고정 */
   }
   
   .header .logo img {
@@ -26,3 +26,4 @@
     margin: 0 15px;
     text-decoration: none;
   }
+  
