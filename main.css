@@ -17,29 +17,24 @@ body {
   margin: 0 auto;
 }
 
-.sidebar {
-  background: #e9daf8;
-  padding: 20px;
-  border-radius: 5px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  height: calc(100vh - 100px);
-}
-
+/* 프로필 블록 여백 추가 */
 .profile {
-  background: #e9daf8;
-  display: flex;
-  align-items: center;
-  width: 100%;
-  margin-bottom: 20px;
+    background: #e9daf8;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    margin-bottom: 30px; /* 프로필 블록 하단에 30px 여백 추가 */
+    padding: 10px; /* 내부 여백 유지 */
+    border-radius: 5px;
+  
+  
 }
 
 .profile img {
   width: 100px;
   height: 100px;
   border-radius: 50%;
-  margin-right: 20px;
+  margin-right: 20px; /* 이미지와 텍스트 사이 여백 */ 
 }
 
 .profile-info {
@@ -47,25 +42,15 @@ body {
   flex-direction: column;
 }
 
-.profile-info h3 {
+.profile-info h3, .profile-info p {
   margin: 0;
-  font-size: 18px;
-}
-
-.profile-info p {
-  margin: 5px 0 0;
   font-size: 14px;
 }
-
 .content {
   display: grid;
   grid-template-columns: 1fr;
   grid-template-rows: auto auto auto;
   gap: 10px;
-}
-#footer{
-  background-color: #F8BDCD;
-  grid-area: footer;       
 }
 .content > div {
   background: #efdeff;
